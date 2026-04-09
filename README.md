@@ -38,6 +38,8 @@ The dataset spans projects from 2018–2024 across Healthcare, Commercial Office
 | `rfis_all.csv` | Requests for information | 22,065 |
 | `field_notes_all.csv` | Unstructured daily field reports ⚠️ | 103,676 |
 
+**Synthetic Data:** [Google Drive](https://drive.google.com/drive/folders/1J9ERglvOk-0vGXZxKxMGO50YnAp_ov6i?usp=drive_link)
+
 ### ⚠️ Data Quality Heads-Up
 
 This is real-world-style data — it is intentionally messy. Before querying, expect to handle:
