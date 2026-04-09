@@ -1,6 +1,6 @@
 # The HVAC Margin Rescue Challenge
 
-DSC NYU Datathon | 🚀 3-Day Challenge | v0 Required
+DSC NYU Datathon | 🚀 3-Day Challenge | v0 Required — v0 credit promo code: **`DATATHON-V0`**
 
 ---
 
@@ -134,6 +134,8 @@ If it's not deployed, it will not be judged.
 ---
 
 ### 2. Required Use of v0
+
+**v0 credit:** Enter the promo code **`DATATHON-V0`** wherever v0 prompts for a code (e.g. billing, plan, or offer redemption) to apply datathon credit toward [v0](https://v0.app).
 
 All teams must meaningfully use **v0** in their development workflow.
 
