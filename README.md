@@ -261,9 +261,3 @@ This is agent output. A table showing `-91%` with a red cell is a dashboard.
 Good luck. Time starts now. 🚀
 
 ---
-
-## Cursor & v0 Instructions
-
-There are two primary ways to use them together: **The API Bridge** (using v0 *inside* Cursor's chat) and **The CLI Bridge** (importing v0 components into your files).
-
----
