@@ -4,6 +4,16 @@ DSC NYU Datathon | 🚀 3-Day Challenge | v0 Required
 
 ---
 
+## Submit on Devpost (required)
+
+**Your team must submit the hackathon entry through Devpost.** A GitHub repo or deployed app on its own is not an official submission — judges use what you upload and link on Devpost.
+
+**→ Official submission page:** [NYU DSC × Pulse Foundry AI NYC — Margin Erosion in HVAC Companies](https://nyu-dsc-x-pulse-foundry-ai-nyc.devpost.com/)
+
+Register on that page, create your project, and submit all deliverables (demo video, repo URL, deployment link, v0 proof, technical summary, etc.) **through the Devpost submission form** before the deadline.
+
+---
+
 ## The Problem
 
 You're the CFO of a $50M/year commercial HVAC contractor.
@@ -239,7 +249,9 @@ This is agent output. A table showing `-91%` with a red cell is a dashboard.
 
 ## Deliverables
 
-1. **Working agent** — GitHub repo or deployed URL
+Provide the following **in your Devpost project submission** (see **Submit on Devpost (required)** at the top of this README):
+
+1. **Working agent** — GitHub repo or deployed URL (linked on Devpost)
 2. **Demo video** (3 min) — Show the agent autonomously finding problems and recommending actions
 3. **v0 proof** — Project link or prompt history
 4. **Technical summary** (1 page) — Architecture, agent design, AI approach, key decisions
