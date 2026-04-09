@@ -177,7 +177,7 @@ The `labor_logs_all.csv` alone has 1.2M rows. Recommended approaches:
 
 ### Stack Suggestions
 
-Next.js + Shadcn/ui + Recharts + Claude/OpenAI API + DuckDB (for aggregation)
+v0 + Next.js + Shadcn/ui + Recharts + Claude/OpenAI API + DuckDB (for aggregation)
 
 ---
 
@@ -265,59 +265,3 @@ Good luck. Time starts now. 🚀
 There are two primary ways to use them together: **The API Bridge** (using v0 *inside* Cursor's chat) and **The CLI Bridge** (importing v0 components into your files).
 
 ---
-
-## 1. The API Bridge (v0 Inside Cursor)
-
-You can configure Cursor to use v0 as a custom model. This allows you to chat with v0's specialized frontend brain without leaving your editor.
-
-### How to set it up
-
-1. **Get your v0 API Key:** Go to your [v0.dev settings](https://v0.dev/settings) and generate a new API Key.
-2. **Configure Cursor:**
-    - Open **Cursor Settings** (`⌘ + Shift + J` or `Ctrl + Shift + J`).
-    - Go to the **Models** tab.
-    - Find the **OpenAI API Key** section (v0 uses an OpenAI-compatible endpoint).
-    - Paste your **v0 API Key**.
-    - Toggle **Override OpenAI Base URL** and enter: `https://api.v0.dev/v1`
-3. **Add the Model:**
-    - Click "Add Custom Model" and type `v0-1.5-md` (or the latest version available).
-4. **Use it:**
-    - In the Cursor Chat/Composer, select the `v0` model from the dropdown. Now, when you ask for UI, you're getting v0's logic directly in your sidebar.
-
----
-
-## 2. The CLI Bridge (Importing Components)
-
-This is the most common workflow. You use the browser version of v0 for its visual preview, then import that code into Cursor.
-
-### How it works
-
-1. **Generate in v0:** Create your component on the v0 website.
-2. **Copy the ID:** Every v0 chat has a unique ID or a "Share" URL.
-3. **The Cursor Terminal:** Open the terminal inside Cursor (`Ctrl + ~`) and run:
-
-    ```bash
-    npx v0 add [v0-id]
-    ```
-
-4. **Auto-Integration:** This command:
-    - Detects if you're using `shadcn/ui` and installs needed primitives.
-    - Installs dependencies (like `framer-motion` or `lucide-react`).
-    - Places a clean, formatted `.tsx` file into your `/components` folder.
-
----
-
-## 3. The "Hybrid" Workflow (Pro Tip)
-
-Since you're likely using **Claude Code** or Cursor's native **Composer** (`⌘ + I`), here is how technical engineers maximize efficiency:
-
-1. **Visual Prototyping:** Use **v0** in the browser to get the "look" right (iterating on CSS/layout in a live preview is 10x faster than coding-saving-refreshing).
-2. **The Import:** Run `npx v0 add` in Cursor.
-3. **The Wiring:** Switch to **Cursor Composer** (`⌘ + I`), point it at the new file, and say:
-
-    > *"@file [new-v0-component.tsx] is just a static UI. Use @schema.prisma to wire this up to our database and add a loading state."*
-
-### Why do it this way
-
-- **v0** is the **Architect** (makes it look professional and accessible).
-- **Cursor/Claude** is the **Engineer** (connects the pipes, handles state, and ensures the backend doesn't break).
